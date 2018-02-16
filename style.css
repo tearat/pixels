@@ -35,32 +35,40 @@ body {
 
 .red {
     background-color: crimson;
+    box-shadow: 0 0 25px 0 crimson;
 }
 
 .orange {
-    background-color: orangered;
+    background-color: darkorange;
+    box-shadow: 0 0 25px 0 darkorange;
 }
 
 .yellow {
     background-color: gold;
+    box-shadow: 0 0 25px 0 gold;
 }
 
 .green {
     background-color: limegreen;
+    box-shadow: 0 0 25px 0 limegreen;
 }
 
 .lazure {
     background-color: skyblue;
+    box-shadow: 0 0 25px 0 skyblue;
 }
 
 .blue {
     background-color: royalblue;
+    box-shadow: 0 0 25px 0 royalblue;
 }
 
 .violet {
     background-color: blueviolet;
+    box-shadow: 0 0 25px 0 blueviolet;
 }
 
 .white {
     background-color: #eee;
+    box-shadow: 0 0 25px 0 #eee;
 }
