@@ -1,3 +1,11 @@
+* {
+    user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+}
+
 body {
     background-color: #111;
 }
@@ -11,20 +19,48 @@ body {
 .cell {
     width: 20px;
     height: 20px;
-    background-color: #333;
+/*    background-color: #333;*/
     display: inline-block;
     margin-left: -4px;
     margin-top: -4px;
 }
 
-.cell:nth-child(3n) {
-    background-color: #383838;
-}
-
 .cell:hover {
-    filter: brightness(1.25);
+    filter: brightness(1.2);
 }
 
-.colored {
+.black {
+    background-color: #333;
+}
+
+.red {
     background-color: crimson;
+}
+
+.orange {
+    background-color: orangered;
+}
+
+.yellow {
+    background-color: gold;
+}
+
+.green {
+    background-color: limegreen;
+}
+
+.lazure {
+    background-color: skyblue;
+}
+
+.blue {
+    background-color: royalblue;
+}
+
+.violet {
+    background-color: blueviolet;
+}
+
+.white {
+    background-color: #eee;
 }

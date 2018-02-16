@@ -20,14 +20,61 @@
     
     <script>
         $('.cell').on("mousedown", function(){
-            $(this).toggleClass('colored');
-            if ( $(this).hasClass('colored') )
-            {
-                var status = 'colored';
+            var status;
+            
+            if ( $(this).hasClass('black') ) 
+            {  
+                $(this).removeClass('black');
+                $(this).addClass('red');
+                status = 'red';
             }
-            else
-            {
-                var status = '';
+            else if ( $(this).hasClass('red') ) 
+            {  
+                $(this).removeClass('red');
+                $(this).addClass('orange');
+                status = 'orange';
+            }
+            else if ( $(this).hasClass('orange') ) 
+            {  
+                $(this).removeClass('orange');
+                $(this).addClass('yellow');
+                status = 'yellow';
+            }
+            else if ( $(this).hasClass('yellow') ) 
+            {  
+                $(this).removeClass('yellow');
+                $(this).addClass('green');
+                status = 'green';
+            }
+            else if ( $(this).hasClass('green') ) 
+            {  
+                $(this).removeClass('green');
+                $(this).addClass('lazure');
+                status = 'lazure';
+            }
+            else if ( $(this).hasClass('lazure') ) 
+            {  
+                $(this).removeClass('lazure');
+                $(this).addClass('blue');
+                status = 'blue';
+            }
+            else if ( $(this).hasClass('blue') ) 
+            {  
+                $(this).removeClass('blue');
+                $(this).addClass('violet');
+                status = 'violet';
+            }
+            else if ( $(this).hasClass('violet') ) 
+            {  
+                $(this).removeClass('violet');
+                $(this).addClass('white');
+                status = 'white';
+            }
+            else if ( $(this).hasClass('white') ) 
+            {  
+                $(this).removeClass('white');
+                $(this).addClass('black');
+                status = 'black';
             }
             $.post( "update.php", { id: $(this).attr('id'), status: status } );
         });
